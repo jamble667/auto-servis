@@ -1,0 +1,487 @@
+<!doctype html>
+<!--custom: страница сверстана вручную по референсу; build2.js её не перезаписывает. Данные: карточка 2ГИС (id 5770765303655256), сверено 2026-10-26.-->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09090b">
+<title>Автомастер, автотехцентр — Ижевск</title>
+<meta name="description" content="Автомастер, автотехцентр. Ижевск, Воткинское шоссе, 146а. Телефон +7 (3412) 56-84-29.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;800&display=swap">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#09090b;--bg2:#0e0e12;--sf:#131318;--sf2:#1b1b22;--bd:rgba(255,255,255,.07);--bd2:rgba(226,184,120,.32);
+  --fg:#f4eee6;--mu:#9d958a;--g1:#f6dcae;--g2:#e2b878;--g3:#b07d40;--acf:#1a1208;
+  --grad:linear-gradient(135deg,#f6dcae 0%,#e2b878 42%,#b07d40 100%);
+  --lt:#f5efe6;--ltfg:#1b160f;--ltmu:#6e6457;--ok:#46d58a;--bad:#ff7f73;
+  --ease:cubic-bezier(.2,.7,.2,1)
+}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}[id]{scroll-margin-top:84px}
+body{background:var(--bg);color:var(--fg);font:400 16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}.w{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Manrope,Inter,sans-serif;font-weight:800;line-height:1.08;letter-spacing:-.02em}
+::selection{background:var(--g2);color:var(--acf)}
+.gt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* лёгкое «зерно» поверх всего — убирает пластиковость тёмного фона */
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.eyebrow{display:inline-flex;gap:10px;align-items:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--g2);margin-bottom:16px}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--grad)}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;background:var(--grad);color:var(--acf);font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;box-shadow:0 10px 30px -10px rgba(226,184,120,.55);transition:transform .25s var(--ease),box-shadow .25s}
+.btn:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s var(--ease)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(226,184,120,.7)}.btn:hover:after{transform:translateX(120%)}
+.btn.ghost{background:rgba(255,255,255,.04);color:var(--fg);box-shadow:inset 0 0 0 1px var(--bd)}.btn.ghost:hover{box-shadow:inset 0 0 0 1px var(--bd2);color:var(--g1)}
+.btn.sm{padding:10px 18px;font-size:14px}
+svg.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+/* полоса прокрутки страницы */
+#prog{position:fixed;top:0;left:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--grad);z-index:60}
+/* шапка */
+header{position:sticky;top:0;z-index:50;background:rgba(9,9,11,.6);backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
+header.sc{background:rgba(9,9,11,.88);border-color:var(--bd)}
+.nav{display:flex;align-items:center;gap:28px;min-height:76px;transition:min-height .3s}header.sc .nav{min-height:62px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo i{position:relative;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;font:800 19px Manrope;font-style:normal;color:var(--g1)}
+.logo i:before{content:"";position:absolute;inset:0;border-radius:50%;padding:1.5px;background:conic-gradient(from var(--a,0deg),#f6dcae,#b07d40,#f6dcae);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 8s linear infinite}
+@property --a{syntax:'<angle>';inherits:false;initial-value:0deg}@keyframes spin{to{--a:360deg}}
+.logo b{display:block;font:800 19px/1.1 Manrope}.logo small{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--mu)}
+.nav nav{display:flex;gap:6px;font-size:14px;color:var(--mu);margin-left:8px}
+.nav nav a{position:relative;padding:8px 12px;text-decoration:none;border-radius:99px;transition:color .2s,background .2s}.nav nav a:hover{color:var(--fg)}.nav nav a.on{color:var(--g1);background:rgba(226,184,120,.09)}
+.nav .meta{margin-left:auto;display:flex;align-items:center;gap:22px;font-size:13px}.meta>div{display:flex;gap:8px;align-items:flex-start;line-height:1.35}.meta svg{width:16px;height:16px;color:var(--g2);margin-top:2px}.meta small{display:block;color:var(--mu);font-size:11px}
+/* первый экран */
+.hero{position:relative;overflow:hidden;min-height:680px;display:flex;align-items:center;isolation:isolate}
+.hero .bgp{position:absolute;inset:0 0 0 34%;z-index:-2;background:url(photo.jpg) center/cover no-repeat;animation:kb 22s ease-in-out infinite alternate;-webkit-mask:linear-gradient(90deg,transparent 0,#000 30%);mask:linear-gradient(90deg,transparent 0,#000 30%)}
+@keyframes kb{from{transform:scale(1.12) translate(2%,1%)}to{transform:scale(1) translate(0,0)}}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(700px 500px at 18% 40%,rgba(226,184,120,.13),transparent 70%),linear-gradient(90deg,var(--bg) 30%,rgba(9,9,11,.55) 58%,rgba(9,9,11,.15)),linear-gradient(0deg,var(--bg),transparent 35%)}
+.orb{position:absolute;z-index:-1;width:420px;height:420px;border-radius:50%;filter:blur(90px);opacity:.35;background:radial-gradient(circle,#e2b878,transparent 65%);left:-120px;top:-60px;animation:fl 14s ease-in-out infinite alternate}
+@keyframes fl{to{transform:translate(80px,60px) scale(1.15)}}
+.hero .w{position:relative;width:100%;padding-top:80px;padding-bottom:140px}
+.hero h1{font-size:clamp(48px,8vw,96px);margin-bottom:20px}
+.hero h1 .gt{background-size:200% 100%;animation:sh 6s linear infinite}@keyframes sh{to{background-position:-200% 0}}
+.hero .sub{color:var(--mu);max-width:540px;font-size:18px;margin-bottom:32px}.hero .sub b{color:var(--fg);font-weight:500}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.live{display:inline-flex;align-items:center;gap:10px;margin-bottom:22px;padding:7px 14px 7px 12px;border-radius:99px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px var(--bd);font-size:13px;color:var(--mu)}
+.dot{position:relative;width:8px;height:8px;border-radius:50%;background:var(--mu)}.dot.y{background:var(--ok)}.dot.n{background:var(--bad)}
+.dot.y:after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--ok);animation:pulse 1.8s ease-out infinite}@keyframes pulse{from{transform:scale(.4);opacity:1}to{transform:scale(1.6);opacity:0}}
+.live b{color:var(--fg);font-weight:500}
+.facts{position:absolute;z-index:3;left:0;right:0;bottom:0;border-top:1px solid var(--bd);background:rgba(14,14,18,.72);backdrop-filter:blur(12px)}
+.facts .w{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:22px;padding-bottom:22px}
+.fact{display:flex;gap:14px;align-items:center;font-size:13px;color:var(--mu);line-height:1.35}
+.fact .fi{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:rgba(226,184,120,.08);box-shadow:inset 0 0 0 1px var(--bd2);color:var(--g2);flex:none}
+.fact b{display:block;color:var(--fg);font-size:15px;font-weight:600}
+/* разделы */
+section{position:relative;padding:100px 0}section h2{font-size:clamp(30px,4.4vw,50px);margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(262px,1fr));gap:18px}
+.card{--mx:50%;--my:0%;position:relative;overflow:hidden;background:linear-gradient(180deg,var(--sf2),var(--sf));border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:14px;box-shadow:inset 0 0 0 1px var(--bd);transition:transform .35s var(--ease),box-shadow .35s}
+.card:before{content:"";position:absolute;inset:0;background:radial-gradient(380px circle at var(--mx) var(--my),rgba(226,184,120,.14),transparent 45%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 1px var(--bd2),0 24px 50px -24px rgba(0,0,0,.8)}.card:hover:before{opacity:1}
+.card .ic{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:rgba(226,184,120,.09);box-shadow:inset 0 0 0 1px var(--bd2);color:var(--g1);transition:transform .5s var(--ease),background .3s}
+.card:hover .ic{transform:rotate(-8deg) scale(1.08);background:var(--grad);color:var(--acf)}
+.card h3{font-size:20px}.card .n{position:absolute;top:22px;right:24px;font:800 13px Manrope;color:rgba(255,255,255,.18)}
+.card ul{list-style:none;padding:0;display:grid;gap:8px;font-size:14px;color:var(--mu)}.card li{display:flex;gap:10px}
+.card li:before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--grad);margin-top:8px}
+.card li.hl{color:var(--g1);font-weight:500}
+.also{margin-top:40px}.also h3{font:600 13px Inter;color:var(--mu);margin-bottom:16px;letter-spacing:.16em;text-transform:uppercase}
+.tags{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
+.tags li{padding:10px 18px;border-radius:99px;background:var(--sf);box-shadow:inset 0 0 0 1px var(--bd);font-size:14px;transition:box-shadow .25s,color .25s,transform .25s}.tags li:hover{box-shadow:inset 0 0 0 1px var(--bd2);color:var(--g1);transform:translateY(-2px)}
+/* информация */
+.why{display:grid;grid-template-columns:.85fr 1.15fr;border-radius:22px;overflow:hidden;background:var(--sf);box-shadow:inset 0 0 0 1px var(--bd)}
+.score{position:relative;padding:48px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;border-right:1px solid var(--bd);background:radial-gradient(500px 300px at 0 0,rgba(226,184,120,.12),transparent 70%)}
+.ring{position:relative;width:170px;height:170px}.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:9}.ring .tr{stroke:rgba(255,255,255,.07)}.ring .bar{stroke:url(#rg);stroke-linecap:round;stroke-dasharray:339.3;stroke-dashoffset:339.3;transition:stroke-dashoffset 1.8s var(--ease)}
+.ring .v{position:absolute;inset:0;display:grid;place-items:center;align-content:center;text-align:center}.ring .v b{font:800 54px/1 Manrope}.ring .v small{color:var(--mu);font-size:13px}
+.stars{font-size:22px;letter-spacing:3px;background:linear-gradient(90deg,var(--g2) var(--p),rgba(255,255,255,.14) var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+.score p{color:var(--mu)}.score p b{color:var(--fg);font-weight:600}
+.feat{padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.feat h3{display:flex;gap:12px;align-items:center;font-size:17px;margin-bottom:12px}.feat h3 span{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:rgba(226,184,120,.09);color:var(--g2)}
+.feat ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}.feat li{padding:6px 12px;border-radius:99px;background:rgba(255,255,255,.04);font-size:13px;color:var(--mu)}
+/* продажа авто */
+.light{background:var(--lt);color:var(--ltfg);overflow:hidden}.light .eyebrow{color:#9a6a2f}.light .eyebrow:before{background:#9a6a2f}
+.used .head{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:flex-end;justify-content:space-between;margin-bottom:34px}.used h2{margin:0}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:99px;background:var(--ltfg);color:var(--g1);font-weight:600}
+.cnt{font:800 15px Manrope;color:var(--ltmu)}.cnt b{color:var(--ltfg);font-size:28px}
+.mq{display:flex;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);margin-bottom:12px}
+.mq ul{display:flex;gap:10px;list-style:none;padding:0 5px;flex:none;animation:mq 60s linear infinite}.mq.r ul{animation-direction:reverse;animation-duration:70s}.mq:hover ul{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-100%)}}
+.mq li{white-space:nowrap;padding:10px 18px;border-radius:99px;background:#fff;box-shadow:0 1px 0 rgba(27,22,15,.06),inset 0 0 0 1px rgba(27,22,15,.1);font-size:15px;font-weight:500}
+/* контакты */
+.contacts{display:grid;grid-template-columns:.95fr 1.05fr;gap:24px}
+.panel{background:var(--sf);border-radius:22px;padding:34px;box-shadow:inset 0 0 0 1px var(--bd)}
+.row{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--bd)}.row:last-of-type{border-bottom:0}
+.row>.ri{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:rgba(226,184,120,.08);color:var(--g2);flex:none}
+.row small{display:block;color:var(--mu);font-size:13px}.row .grow{flex:1;min-width:0}
+.phl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 10px}.phl .live{white-space:nowrap}
+.phl a{font:800 20px/1.6 Manrope;text-decoration:none;transition:color .2s}.phl a:hover{color:var(--g1)}
+.cp{flex:none;display:grid;place-items:center;width:34px;height:34px;border:0;border-radius:10px;background:rgba(255,255,255,.04);color:var(--mu);cursor:pointer;transition:background .2s,color .2s}.cp:hover{background:rgba(226,184,120,.14);color:var(--g1)}.cp svg{width:16px;height:16px}
+.today{margin-top:12px}.bar{position:relative;height:8px;border-radius:8px;background:rgba(255,255,255,.07);overflow:visible}
+.bar .fill{position:absolute;left:37.5%;width:45.83%;top:0;bottom:0;border-radius:8px;background:var(--grad)}
+.bar .now{position:absolute;top:-5px;width:2px;height:18px;background:#fff;border-radius:2px;box-shadow:0 0 0 3px rgba(255,255,255,.15);transition:left 1s var(--ease)}
+.ticks{position:relative;height:16px;font-size:11px;color:var(--mu);margin-top:6px}.ticks span{position:absolute;transform:translateX(-50%)}.ticks span:first-child{transform:none}.ticks span:last-child{transform:translateX(-100%)}.ticks .k{color:var(--g1);font-weight:600}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:14px}
+.week div{text-align:center;padding:8px 2px;border-radius:10px;background:rgba(255,255,255,.04);font-size:12px;color:var(--mu)}.week b{display:block;color:var(--fg);font-size:13px}
+.week .on{background:var(--grad);color:var(--acf)}.week .on b{color:var(--acf)}
+.note{margin-top:12px;display:inline-flex;gap:8px;align-items:center;padding:7px 12px;border-radius:10px;background:rgba(226,184,120,.09);color:var(--g1);font-size:13px}
+.msg{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.map{position:relative;min-height:520px;border-radius:22px;overflow:hidden;background:var(--sf);box-shadow:inset 0 0 0 1px var(--bd)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:invert(.92) hue-rotate(180deg) grayscale(.55) contrast(.9) sepia(.15)}
+.map .btn{position:absolute;right:16px;bottom:16px}
+.map .pin{position:absolute;left:16px;top:16px;padding:12px 16px;border-radius:14px;background:rgba(9,9,11,.85);backdrop-filter:blur(8px);box-shadow:inset 0 0 0 1px var(--bd);font-size:13px}.map .pin b{display:block;font:800 15px Manrope}
+footer{border-top:1px solid var(--bd);padding:40px 0;color:var(--mu);font-size:14px}
+footer .w{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}footer nav{display:flex;gap:22px}footer a{text-decoration:none}footer a:hover{color:var(--g1)}
+/* всплывашка, «наверх», нижняя панель на телефоне */
+#toast{position:fixed;left:50%;bottom:28px;z-index:70;transform:translate(-50%,30px);opacity:0;padding:12px 20px;border-radius:99px;background:var(--fg);color:var(--bg);font-weight:600;font-size:14px;pointer-events:none;transition:all .35s var(--ease)}#toast.on{opacity:1;transform:translate(-50%,0)}
+#top-btn{position:fixed;right:22px;bottom:22px;z-index:55;width:48px;height:48px;border-radius:50%;border:0;background:var(--sf2);color:var(--g1);box-shadow:inset 0 0 0 1px var(--bd2);cursor:pointer;opacity:0;transform:translateY(20px);transition:all .3s var(--ease)}#top-btn.on{opacity:1;transform:none}
+.mbar{display:none}
+/* появление при прокрутке */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--d,0)*90ms)}
+.js .rv.in{opacity:1;transform:none}
+.js .hero .rv{transition-duration:1.1s}
+@media(max-width:1020px){.nav nav,.nav .meta .addr{display:none}.facts .w{grid-template-columns:1fr 1fr}.why,.contacts{grid-template-columns:1fr}.score{border-right:0;border-bottom:1px solid var(--bd)}
+  .hero{flex-direction:column;align-items:stretch;justify-content:flex-end;min-height:0}.hero .bgp{inset:0;-webkit-mask:linear-gradient(180deg,#000,rgba(0,0,0,.35));mask:linear-gradient(180deg,#000,rgba(0,0,0,.35))}.hero:before{background:linear-gradient(180deg,rgba(9,9,11,.55),var(--bg) 95%)}.hero .w{padding-top:120px;padding-bottom:40px}.facts{position:static}}
+@media(max-width:760px){.mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(9,9,11,.92);backdrop-filter:blur(12px);border-top:1px solid var(--bd)}.mbar .btn{justify-content:center}body{padding-bottom:76px}#top-btn{bottom:92px}#toast{bottom:96px}}
+@media(max-width:600px){section{padding:64px 0}.feat{grid-template-columns:1fr;padding:28px}.score{padding:28px}.panel{padding:22px}.facts .w{grid-template-columns:1fr;gap:14px;padding-top:16px;padding-bottom:16px}.nav .meta .btn,.nav .meta small{display:none}.nav .meta a{white-space:nowrap}.nav{gap:12px}.map{min-height:360px}.phl a{font-size:18px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+
+<header id="hdr">
+  <div class="w nav">
+    <a class="logo" href="#top"><i>А</i><span><b>Автомастер</b><small>автотехцентр</small></span></a>
+    <nav>
+      <a href="#uslugi">Услуги</a>
+      <a href="#info">Информация</a>
+      <a href="#avto">Продажа авто</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <div class="meta">
+      <div class="addr"><svg class="i" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Ижевск<small>Воткинское шоссе, 146а</small></span></div>
+      <div><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg><span><a href="tel:+73412568429" style="text-decoration:none">+7 (3412) 56-84-29</a><small>ежедневно 09:00–20:00</small></span></div>
+      <a class="btn sm" href="tel:+73412568429">Позвонить</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="bgp" role="img" aria-label="Здание автотехцентра «Автомастер», Воткинское шоссе, 146а"></div>
+  <div class="orb" aria-hidden="true"></div>
+  <div class="w">
+    <div class="live rv"><span class="dot" data-st="dot"></span><span><b data-st="txt">Ежедневно 09:00–20:00</b></span></div><br>
+    <span class="eyebrow rv" style="--d:1">Автотехцентр · Ижевск</span>
+    <h1 class="rv" style="--d:2">Авто<span class="gt">мастер</span></h1>
+    <p class="sub rv" style="--d:3"><b>Легковой и грузовой автосервис</b>, автомойка, шиномонтаж, развал-схождение, ремонт двигателей и ходовой части.</p>
+    <div class="cta rv" style="--d:4">
+      <a class="btn" href="tel:+73412568429"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>Позвонить</a>
+      <a class="btn ghost" href="https://2gis.ru/izhevsk/firm/5770765303655256">Маршрут в 2ГИС</a>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="w">
+      <div class="fact rv"><span class="fi"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><span><b><span data-count="4.8" data-dec="1">4,8</span> из 5</b><span data-count="222">222</span> оценки в 2ГИС</span></div>
+      <div class="fact rv" style="--d:1"><span class="fi"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><b>Ежедневно 09:00–20:00</b>без выходных</span></div>
+      <div class="fact rv" style="--d:2"><span class="fi"><svg class="i" viewBox="0 0 24 24"><path d="M12 3s6 6.2 6 10.5a6 6 0 01-12 0C6 9.2 12 3 12 3z"/></svg></span><span><b>Круглосуточно</b>автомойка и шиномонтаж</span></div>
+      <div class="fact rv" style="--d:3"><span class="fi"><svg class="i" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><span><b>Воткинское шоссе, 146а</b>Устиновский район, Ижевск</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="uslugi">
+  <div class="w">
+    <span class="eyebrow rv">01 — Услуги</span>
+    <h2 class="rv">Наши услуги</h2>
+    <div class="grid">
+
+      <article class="card rv">
+        <span class="n">01</span>
+        <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 3s6 6.2 6 10.5a6 6 0 01-12 0C6 9.2 12 3 12 3z"/></svg></span>
+        <h3>Автомойка</h3>
+        <ul>
+          <li class="hl">Комплексная мойка от 650 ₽</li>
+          <li>Автомойки самообслуживания для легковых автомобилей</li>
+          <li>Бесконтактная мойка</li>
+          <li>Химчистка салона</li>
+          <li>Мойка двигателя</li>
+          <li>Мойка днища</li>
+          <li>Полировка кузова</li>
+          <li>До 2 машин</li>
+          <li>Возможна запись</li>
+          <li>Зал ожидания</li>
+        </ul>
+      </article>
+
+      <article class="card rv" style="--d:1">
+        <span class="n">02</span>
+        <span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <h3>Шиномонтаж</h3>
+        <ul>
+          <li>Покраска дисков</li>
+          <li>Замена колодок</li>
+          <li>Сварка дисков</li>
+          <li>Мойка шин</li>
+          <li>Возможна запись</li>
+          <li>Грузовой шиномонтаж</li>
+          <li>Мотошиномонтаж</li>
+          <li>Ремонт порезов</li>
+          <li>Правка / Прокатка дисков</li>
+          <li>Ошиповка шин</li>
+        </ul>
+      </article>
+
+      <article class="card rv" style="--d:2">
+        <span class="n">03</span>
+        <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M4 10h3l2-3h6l2 3h3v7h-3l-1 2H8l-1-2H4zM9 10v7"/></svg></span>
+        <h3>Ремонт двигателей</h3>
+        <ul>
+          <li>Шлифовка</li>
+          <li>Расточка</li>
+          <li>Гильзовка</li>
+          <li>Опрессовка</li>
+        </ul>
+      </article>
+
+      <article class="card rv" style="--d:3">
+        <span class="n">04</span>
+        <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M14.5 5.5a4 4 0 00-5 5L4 16l4 4 5.5-5.5a4 4 0 005-5l-3 3-2.5-.5-.5-2.5z"/></svg></span>
+        <h3>Ремонт ходовой части автомобиля</h3>
+        <ul>
+          <li>Ремонт стоек</li>
+          <li>Проточка тормозных дисков</li>
+        </ul>
+      </article>
+
+      <article class="card rv">
+        <span class="n">05</span>
+        <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 3c3 3 5 5.6 5 8.5a5 5 0 01-10 0C7 8.6 9 6 12 3zM9.5 19h5"/></svg></span>
+        <h3>Замена масла</h3>
+        <ul>
+          <li>Аппаратная</li>
+        </ul>
+      </article>
+
+      <article class="card rv" style="--d:1">
+        <span class="n">06</span>
+        <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v8l-9 5-9-5zM3 8l9 5 9-5M12 13v8"/></svg></span>
+        <h3>Автозапчасти и аксессуары</h3>
+        <ul>
+          <li>Автооптика</li>
+          <li>Подвеска и ходовая</li>
+          <li>Расходные материалы</li>
+          <li>Рулевое управление</li>
+          <li>Топливная система</li>
+          <li>Тормозная система</li>
+          <li>Трансмиссия</li>
+          <li>Электрооборудование</li>
+          <li class="hl"><span>Марки запчастей: Lada (ВАЗ), ГАЗ, УАЗ, Москвич</span></li>
+        </ul>
+      </article>
+
+    </div>
+
+    <div class="also rv">
+      <h3>Также</h3>
+      <ul class="tags">
+        <li>Легковой автосервис</li>
+        <li>Грузовой автосервис</li>
+        <li>Развал-схождение</li>
+        <li>Ремонт бензиновых двигателей</li>
+        <li>Ремонт стартеров и генераторов</li>
+        <li>Ремонт инжекторов</li>
+        <li>Ремонт карбюраторов</li>
+        <li>Ремонт МКПП</li>
+        <li>Обслуживание автомобильных климатических систем</li>
+        <li>Установка и ремонт автостёкол</li>
+        <li>Запчасти для отечественных авто</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="info" style="padding-top:0">
+  <div class="w">
+    <span class="eyebrow rv">02 — 2ГИС</span>
+    <h2 class="rv">Информация</h2>
+    <div class="why rv">
+      <div class="score">
+        <div class="ring" id="ring">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6dcae"/><stop offset="1" stop-color="#b07d40"/></linearGradient></defs><circle class="tr" cx="60" cy="60" r="54"/><circle class="bar" cx="60" cy="60" r="54"/></svg>
+          <div class="v"><b data-count="4.8" data-dec="1">4,8</b><small>из 5</small></div>
+        </div>
+        <div class="stars" style="--p:96%" aria-label="Оценка 4,8 из 5">★★★★★</div>
+        <p><b data-count="222">222</b> оценки · <b data-count="149">149</b> отзывов в 2ГИС</p>
+        <a class="btn sm" href="https://2gis.ru/izhevsk/firm/5770765303655256/tab/reviews">Читать отзывы</a>
+      </div>
+      <div class="feat">
+        <div>
+          <h3><span><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0114 0M8 15.5a6 6 0 018 0"/><circle cx="12" cy="19" r="1"/></svg></span>Дополнительно</h3>
+          <ul><li>Wi-Fi для клиентов</li><li>Кафе</li></ul>
+        </div>
+        <div>
+          <h3><span><svg class="i" viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg></span>Услуги</h3>
+          <ul><li>Доставка</li></ul>
+        </div>
+        <div>
+          <h3><span><svg class="i" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg></span>Способы оплаты</h3>
+          <ul><li>Оплата картой</li><li>Наличный расчёт</li><li>Оплата через банк</li><li>Перевод с карты</li><li>Оплата по QR-коду</li></ul>
+        </div>
+        <div>
+          <h3><span><svg class="i" viewBox="0 0 24 24"><path d="M4 9l2-5h12l2 5M4 9v11h16V9M9 20v-6h6v6"/></svg></span>Тип предприятия</h3>
+          <ul><li>Розница</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="avto" class="light">
+  <div class="w used">
+    <div class="head">
+      <div>
+        <span class="eyebrow rv">03 — Продажа</span>
+        <h2 class="rv">Продажа легковых<br>автомобилей</h2>
+      </div>
+      <div class="rv" style="display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+        <span class="pill"><svg class="i" viewBox="0 0 24 24"><path d="M5 17h14M7 17V9l2-4h6l2 4v8M7 11h10"/></svg>Подержанные авто</span>
+        <span class="cnt"><b data-count="53">53</b> марки</span>
+      </div>
+    </div>
+  </div>
+  <div class="rv">
+    <div class="mq" data-mq="0"></div>
+    <div class="mq r" data-mq="1"></div>
+  </div>
+  <ul id="brands" hidden>
+    <li>Cadillac</li><li>Changan</li><li>Chery</li><li>Chevrolet</li><li>Chrysler</li><li>Citroen</li><li>Daewoo</li><li>Daihatsu</li><li>Datsun</li><li>Dodge</li><li>Dongfeng</li><li>Fiat</li><li>Ford</li><li>Foton</li><li>Geely</li><li>GMC</li><li>Great Wall</li><li>Haima</li><li>Haval</li><li>Hawtai</li><li>Honda</li><li>Hyundai</li><li>Isuzu</li><li>JAC</li><li>Kia</li><li>Lancia</li><li>Lifan</li><li>Luxgen</li><li>Maxus</li><li>Mazda</li><li>Mitsubishi</li><li>Nissan</li><li>Opel</li><li>Peugeot</li><li>Ravon</li><li>Renault</li><li>Rover</li><li>Saab</li><li>SEAT</li><li>Skoda</li><li>SsangYong</li><li>Subaru</li><li>Suzuki</li><li>Toyota</li><li>Volkswagen</li><li>Volvo</li><li>Vortex</li><li>Lada (ВАЗ)</li><li>ГАЗ</li><li>ЗАЗ</li><li>ТагАЗ</li><li>УАЗ</li><li>Genesis</li>
+  </ul>
+</section>
+
+<section id="kontakty">
+  <div class="w">
+    <span class="eyebrow rv">04 — Контакты</span>
+    <h2 class="rv">Контакты</h2>
+    <div class="contacts">
+      <div class="panel rv">
+        <div class="row">
+          <span class="ri"><svg class="i" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <div class="grow phl"><span>Ижевск, Воткинское шоссе, 146а<small>Устиновский район</small></span><button class="cp" type="button" data-copy="Ижевск, Воткинское шоссе, 146а" aria-label="Скопировать адрес"><svg class="i" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3"/></svg></button></div>
+        </div>
+        <div class="row">
+          <span class="ri"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div class="grow">
+            <div class="phl"><b style="font:800 20px Manrope">Ежедневно 09:00–20:00</b><span class="live" style="margin:0"><span class="dot" data-st="dot"></span><span data-st="txt"></span></span></div>
+            <div class="today" aria-label="Шкала рабочего дня: с 09:00 до 20:00">
+              <div class="bar"><span class="fill"></span><span class="now" id="now" hidden></span></div>
+              <div class="ticks"><span style="left:0">00</span><span style="left:25%">06</span><span class="k" style="left:37.5%">09</span><span style="left:58.33%">14</span><span class="k" style="left:83.33%">20</span><span style="left:100%">24</span></div>
+            </div>
+            <div class="week" id="week"></div>
+            <div class="note"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M12 3s6 6.2 6 10.5a6 6 0 01-12 0C6 9.2 12 3 12 3z"/></svg>Автомойка и шиномонтаж: круглосуточно</div>
+          </div>
+        </div>
+        <div class="row">
+          <span class="ri"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+          <div class="grow">
+            <div class="phl"><a href="tel:+73412568429">+7 (3412) 56-84-29</a><button class="cp" type="button" data-copy="+7 (3412) 56-84-29" aria-label="Скопировать номер"><svg class="i" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3"/></svg></button></div>
+            <div class="phl"><a href="tel:+73412958747">+7 (3412) 95-87-47</a><button class="cp" type="button" data-copy="+7 (3412) 95-87-47" aria-label="Скопировать номер"><svg class="i" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3"/></svg></button></div>
+            <div class="phl"><a href="tel:+73412561133">+7 (3412) 56-11-33</a><button class="cp" type="button" data-copy="+7 (3412) 56-11-33" aria-label="Скопировать номер"><svg class="i" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3"/></svg></button></div>
+          </div>
+        </div>
+        <div class="row">
+          <span class="ri"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <div class="grow phl"><a href="mailto:ssv1114@mail.ru" style="text-decoration:none">ssv1114@mail.ru</a><button class="cp" type="button" data-copy="ssv1114@mail.ru" aria-label="Скопировать почту"><svg class="i" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3"/></svg></button></div>
+        </div>
+        <div class="msg">
+          <a class="btn" href="tel:+73412568429">Позвонить</a>
+          <a class="btn ghost" href="https://vk.com/avtomasteeer">ВКонтакте</a>
+          <a class="btn ghost" href="https://2gis.ru/izhevsk/firm/5770765303655256/tab/photos">Фото в 2ГИС</a>
+        </div>
+      </div>
+      <div class="map rv" style="--d:1">
+        <iframe title="Карта: Воткинское шоссе, 146а" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=53.25450%2C56.88325%2C53.26450%2C56.88925&amp;layer=mapnik&amp;marker=56.886248%2C53.259476"></iframe>
+        <div class="pin"><b>Автомастер</b>Воткинское шоссе, 146а</div>
+        <a class="btn sm" href="https://2gis.ru/izhevsk/firm/5770765303655256">Маршрут в 2ГИС</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="w">
+    <a class="logo" href="#top"><i>А</i><span><b>Автомастер</b><small>автотехцентр</small></span></a>
+    <nav><a href="#uslugi">Услуги</a><a href="#info">Информация</a><a href="#avto">Продажа авто</a><a href="#kontakty">Контакты</a></nav>
+    <span>Воткинское шоссе, 146а, Ижевск · +7 (3412) 56-84-29</span>
+    <span>Данные: 2ГИС</span>
+  </div>
+</footer>
+
+<div class="mbar"><a class="btn" href="tel:+73412568429">Позвонить</a><a class="btn ghost" href="https://2gis.ru/izhevsk/firm/5770765303655256">Маршрут</a></div>
+<button id="top-btn" type="button" aria-label="Наверх"><svg class="i" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return[].slice.call((r||document).querySelectorAll(s))};
+  var calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Режим работы из 2ГИС: ежедневно 09:00–20:00, время Ижевска (UTC+4)
+  var P=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Samara',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+  var g=function(t){return P.filter(function(x){return x.type==t})[0].value};
+  var day=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(g('weekday')),m=(+g('hour'))%24*60+(+g('minute')),on=m>=540&&m<1200;
+  var left=on?(1200-m):(m<540?540-m:540+1440-m),hh=Math.floor(left/60),mm=left%60;
+  var txt=on?'Открыто · до закрытия '+(hh?hh+' ч ':'')+mm+' мин':'Закрыто · откроется в 09:00';
+  $$('[data-st=dot]').forEach(function(e){e.className='dot '+(on?'y':'n')});
+  $$('[data-st=txt]').forEach(function(e){e.textContent=txt});
+  var now=$('#now');now.hidden=false;now.style.left=(m/1440*100).toFixed(2)+'%';
+  var SH=['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
+  $('#week').innerHTML=SH.map(function(d,i){return'<div'+(i==day?' class="on"':'')+'><b>'+d+'</b>09–20</div>'}).join('');
+
+  // Бегущая строка марок: две ленты, вторая — в обратную сторону; копии скрыты от скринридеров
+  var br=$$('#brands li').map(function(l){return l.textContent});
+  $$('[data-mq]').forEach(function(box){
+    var half=box.getAttribute('data-mq')=='0'?br.slice(0,27):br.slice(27);
+    var html='<ul>'+half.map(function(b){return'<li>'+b+'</li>'}).join('')+'</ul>';
+    box.innerHTML=html+html.replace('<ul>','<ul aria-hidden="true">');
+  });
+  $('#brands').removeAttribute('hidden');$('#brands').className='sr';$('#brands').style.cssText='position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)';
+
+  // Счётчики
+  function count(el){
+    var to=parseFloat(el.getAttribute('data-count')),dec=+(el.getAttribute('data-dec')||0),t0=null,dur=1400;
+    if(calm){return}
+    function f(t){t0=t0||t;var k=Math.min((t-t0)/dur,1),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dec).replace('.',',');if(k<1)requestAnimationFrame(f)}
+    requestAnimationFrame(f);
+  }
+  // Появление при прокрутке
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var t=e.target;t.classList.add('in');
+    $$('[data-count]',t).forEach(function(c){if(!c.dataset.done){c.dataset.done=1;count(c)}});
+    if(t.querySelector('#ring')||t.id=='ring'){$('#ring .bar').style.strokeDashoffset=(339.3*(1-4.8/5)).toFixed(1)}
+    io.unobserve(t)})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  $$('.rv').forEach(function(el){io.observe(el)});
+
+  // Подсветка карточек за курсором
+  $$('.card').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+
+  // Шапка, полоса прокрутки, кнопка «наверх», активный пункт меню
+  var hdr=$('#hdr'),prog=$('#prog'),tb=$('#top-btn'),links=$$('.nav nav a');
+  function onScroll(){var y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+    hdr.classList.toggle('sc',y>10);prog.style.transform='scaleX('+(h>0?y/h:0)+')';tb.classList.toggle('on',y>innerHeight)}
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  tb.addEventListener('click',function(){scrollTo({top:0,behavior:calm?'auto':'smooth'})});
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')=='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'});
+  ['uslugi','info','avto','kontakty'].forEach(function(id){so.observe(document.getElementById(id))});
+
+  // Копирование
+  var toast=$('#toast'),tt;
+  function say(s){toast.textContent=s;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('on')},1800)}
+  $$('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var v=b.getAttribute('data-copy');
+    var done=function(){say('Скопировано: '+v)};
+    if(navigator.clipboard&&isSecureContext)navigator.clipboard.writeText(v).then(done,fallback);else fallback();
+    function fallback(){var t=document.createElement('textarea');t.value=v;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy');done()}catch(e){say(v)}t.remove()}
+  })});
+})();
+</script>
+</body>
+</html>
